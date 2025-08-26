@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Tomato",
+    "price": "40",
+    "description": "Fresh red tomatoes rich in vitamins and antioxidants.",
+    "rating": "4.5",
+    "images": [
+      { "image": "tomato.png" }
+    ],
+    "category": "Vegetable",
+    "seller": "Fresh Farms",
+    "stock": "120",
+    "numofreviews": "25",
+    "createat": "2025-08-22T08:00:00Z"
+  },
+  {
+    "name": "Potato",
+    "price": "25",
+    "description": "Organic farm-fresh potatoes perfect for all dishes.",
+    "rating": "4.6",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Patates.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Green Harvest",
+    "stock": "200",
+    "numofreviews": "18",
+    "createat": "2025-08-21T10:00:00Z"
+  },
+  {
+    "name": "Carrot",
+    "price": "50",
+    "description": "Crunchy carrots packed with beta-carotene and vitamins.",
+    "rating": "4.8",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Carrots.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Nature's Basket",
+    "stock": "90",
+    "numofreviews": "30",
+    "createat": "2025-08-20T09:30:00Z"
+  },
+  {
+    "name": "Onion",
+    "price": "30",
+    "description": "Pungent and flavorful onions perfect for seasoning.",
+    "rating": "4.4",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Onions.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Farm Fresh",
+    "stock": "150",
+    "numofreviews": "22",
+    "createat": "2025-08-19T14:20:00Z"
+  },
+  {
+    "name": "Spinach",
+    "price": "35",
+    "description": "Leafy green spinach rich in iron and vitamins.",
+    "rating": "4.7",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Spinach_leaves.jpg" }
+    ],
+    "category": "Leafy Vegetable",
+    "seller": "Organic Valley",
+    "stock": "75",
+    "numofreviews": "15",
+    "createat": "2025-08-18T07:15:00Z"
+  },
+  {
+    "name": "Cabbage",
+    "price": "28",
+    "description": "Fresh and crunchy cabbage, perfect for salads.",
+    "rating": "4.5",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Cabbage.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Green Fields",
+    "stock": "100",
+    "numofreviews": "12",
+    "createat": "2025-08-17T11:10:00Z"
+  },
+  {
+    "name": "Cauliflower",
+    "price": "45",
+    "description": "Healthy cauliflower, high in fiber and vitamins.",
+    "rating": "4.6",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cauliflower.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Nature's Choice",
+    "stock": "85",
+    "numofreviews": "17",
+    "createat": "2025-08-16T16:45:00Z"
+  },
+  {
+    "name": "Green Peas",
+    "price": "60",
+    "description": "Sweet green peas, great for curries and snacks.",
+    "rating": "4.9",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Green_peas.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Fresh Harvest",
+    "stock": "65",
+    "numofreviews": "10",
+    "createat": "2025-08-15T08:50:00Z"
+  },
+  {
+    "name": "Brinjal",
+    "price": "35",
+    "description": "Fresh purple brinjals, tender and tasty.",
+    "rating": "4.3",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Brinjal.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Green Mart",
+    "stock": "80",
+    "numofreviews": "14",
+    "createat": "2025-08-14T12:35:00Z"
+  },
+  {
+    "name": "Lady Finger",
+    "price": "38",
+    "description": "Fresh lady fingers, soft and perfect for curries.",
+    "rating": "4.5",
+    "images": [
+      { "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Lady_finger.jpg" }
+    ],
+    "category": "Vegetable",
+    "seller": "Healthy Harvest",
+    "stock": "95",
+    "numofreviews": "20",
+    "createat": "2025-08-13T09:05:00Z"
+  }
+]
