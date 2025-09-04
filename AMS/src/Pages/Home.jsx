@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { Header } from "../components/Header";
-import { ProductCart } from "../components/productCart";
+
 
 
 export const Home = () => {
@@ -225,14 +225,10 @@ export const Home = () => {
         New Featured Products
       </div>
       <img className="items-center mt-6 ml-180" src="leaf.png" alt="leaf" />
-<div className="p-6">
-      <h1 className="text-2xl font-semibold mb-6">Products</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 row">
+         
         
-          <ProductCart />
-        
-      </div>
-    </div>
+     
+   
     </>
   );
 };

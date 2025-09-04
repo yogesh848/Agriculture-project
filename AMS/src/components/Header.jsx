@@ -40,7 +40,7 @@ export const Header = () => {
       <div className="bg-green-950">
         <div className="flex relative ml-10 h-20 w-30">
           <Link to="/home">
-            <img className="mt-5 cursor-pointer" src="logo.png" alt="Logo" />
+            <img className=" cursor-pointer p-10" src="logo.png" alt="Logo" />
           </Link>
         </div>
 
