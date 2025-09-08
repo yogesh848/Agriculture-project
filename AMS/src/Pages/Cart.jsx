@@ -4,10 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Cart = () => {
   const [cart, setCart] = useState([]);
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // Load cart from localStorage
+  
   useEffect(() => {
     const loadCart = () => {
       const savedCart = localStorage.getItem('cart');
@@ -26,7 +25,7 @@ export const Cart = () => {
 
     loadCart();
 
-    // Listen for cart updates from other pages
+    
     window.addEventListener('cartUpdated', loadCart);
     
     return () => {
@@ -34,16 +33,15 @@ export const Cart = () => {
     };
   }, []);
 
-  // Update cart in localStorage whenever cart changes
+  
   useEffect(() => {
     if (cart.length > 0) {
       localStorage.setItem('cart', JSON.stringify(cart));
-      // Dispatch cart update event for header
-      window.dispatchEvent(new Event('cartUpdated'));
+            window.dispatchEvent(new Event('cartUpdated'));
     }
   }, [cart]);
 
-  // Update quantity
+  
   const updateQuantity = (id, newQuantity) => {
     if (newQuantity <= 0) {
       removeFromCart(id);
@@ -55,29 +53,29 @@ export const Cart = () => {
     ));
   };
 
-  // Remove item from cart
+  
   const removeFromCart = (id) => {
     setCart(cart.filter(item => item.id !== id));
   };
 
-  // Clear entire cart
+  
   const clearCart = () => {
     setCart([]);
   };
 
-  // Calculate totals
+  
   const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  const shipping = subtotal > 200 ? 0 : 50; // Free shipping over ₹200
+  const shipping = subtotal > 200 ? 0 : 50; 
   const total = subtotal + shipping;
 
-  // Proceed to checkout
+  
   const proceedToCheckout = () => {
     if (cart.length === 0) {
       alert('Your cart is empty!');
       return;
     }
     
-    // Navigate directly to payment page
+    
     navigate('/payment');
   };
 
@@ -86,7 +84,7 @@ export const Cart = () => {
       <>
         <Header />
         <div className="min-h-screen bg-gray-50">
-          {/* Hero Section */}
+          
           <div className="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
             <div className="container mx-auto px-4 text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-4">Shopping Cart</h1>
@@ -94,7 +92,7 @@ export const Cart = () => {
             </div>
           </div>
 
-          {/* Empty Cart */}
+          
           <div className="container mx-auto px-4 py-16">
             <div className="text-center">
               <div className="text-gray-400 text-8xl mb-8">🛒</div>
@@ -120,7 +118,7 @@ export const Cart = () => {
     <>
       <Header />
       <div className="min-h-screen bg-gray-50">
-        {/* Hero Section */}
+        
         <div className="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Shopping Cart</h1>
@@ -130,7 +128,7 @@ export const Cart = () => {
 
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Cart Items */}
+            
             <div className="lg:col-span-2">
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="flex items-center justify-between mb-6">

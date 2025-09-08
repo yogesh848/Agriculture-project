@@ -9,6 +9,7 @@ import { Cart } from "./Pages/Cart";
 import { Payment } from "./Pages/Payment";
 import { Orders } from "./Pages/Orders";
 import { TestPage } from "./Pages/TestPage";
+import { About } from "./Pages/About";
 
 // Debug: Log imports
 console.log("Payment component:", Payment);
@@ -28,6 +29,8 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/test" element={<TestPage />} />
+        <Route path="/about" element={<About />} />
+
       </Routes>
     </BrowserRouter>
   );

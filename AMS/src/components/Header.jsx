@@ -5,7 +5,7 @@ export const Header = () => {
   const [cartCount, setCartCount] = useState(0);
   const location = useLocation();
 
-  // Load cart count from localStorage
+  
   useEffect(() => {
     const updateCartCount = () => {
       const savedCart = localStorage.getItem('cart');
@@ -18,10 +18,10 @@ export const Header = () => {
 
     updateCartCount();
     
-    // Listen for storage changes (when cart is updated from other tabs)
+    
     window.addEventListener('storage', updateCartCount);
     
-    // Listen for custom cart update events
+    
     window.addEventListener('cartUpdated', updateCartCount);
 
     return () => {
@@ -94,7 +94,10 @@ export const Header = () => {
         >
           ORDERS
         </Link>
-        <p className="cursor-pointer text-white hover:text-green-500">ABOUT</p>
+        <Link to="/about"><p  className={`cursor-pointer transition-colors duration-200 ${
+            isActive('/about') ? 'text-green-400' : 'text-white hover:text-green-500'
+          }`}>ABOUT</p></Link>
+        
         <p className="cursor-pointer text-white hover:text-green-500">CONTACT</p>
         <div className="flex ml-20">
           <img className="w-8 h-8 cursor-pointer hover:scale-110 transition-transform" src="search.png" alt="Search" />

@@ -12,20 +12,20 @@ export const Home = () => {
   const [logo1, setLogo1] = useState("ship.png");
   const [logo2, setLogo2] = useState("store.png");
   const [logo3, setLogo3] = useState("payment.png");
-  const [products, setProducts] = useState([]);
+  const [, setProducts] = useState([]);
   
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // Try the MongoDB API first
+        
         const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/v1/products`);
         const data = await response.json();
         
         if (data.success && data.product) {
           setProducts(data.product || []);
         } else {
-          // Fallback to static data if API fails
+          
           console.log("API failed, using fallback data");
           const fallbackProducts = [
             {
@@ -69,7 +69,7 @@ export const Home = () => {
         }
       } catch (error) {
         console.error("Error fetching products:", error);
-        // Use fallback data on error
+        
         const fallbackProducts = [
           {
             name: "Tomato",
