@@ -47,7 +47,7 @@ app.post("/register", (req, res) => {
       res.status(500).json("Error occurred during registration");
     });
 });
-app.use(express.json())
+
 app.use('/api/v1/',products);
 app.use('/api/v1/',order)
 
