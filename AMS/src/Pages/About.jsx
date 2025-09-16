@@ -72,6 +72,7 @@ export const About = () => {
             or words even slightly believable.
           </p>
 
+
           <div className="mt-10 space-y-6 relavite">
             <div className="w-full max-w-120">
               <div className="text-green-800 font-semibold text-right mb-1">{percent91}%</div>
