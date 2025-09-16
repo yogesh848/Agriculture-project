@@ -6,9 +6,9 @@ import { Register } from "./Pages/Register";
 import { Home } from "./Pages/Home";
 import { Products } from "./Pages/Products";
 import { Cart } from "./Pages/Cart";
-import { Payment } from "./Pages/Payment";
+import  Payment  from "./Pages/Payment";
 import { Orders } from "./Pages/Orders";
-import { TestPage } from "./Pages/TestPage";
+
 import { About } from "./Pages/About";
 
 // Debug: Log imports
@@ -28,7 +28,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/orders" element={<Orders />} />
-        <Route path="/test" element={<TestPage />} />
+       
         <Route path="/about" element={<About />} />
 
       </Routes>

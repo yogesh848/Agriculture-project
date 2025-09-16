@@ -1,8 +1,10 @@
-const express = require('express');
-const { getProduct } = require('./productsDetails');
-const { createOrder } = require('./orderDetails');
-const router = express.Router();
+const mongoose = require('mongoose');
 
+const orderSchema = new mongoose.Schema({
+  cartItems: Array,
+  amount: Number,
+  status: String,
+}, { timestamps: true });
 
-router.route('/order').post(createOrder);
-module.exports=router;
+const orderModel = mongoose.model('Order', orderSchema);
+module.exports = orderModel;
